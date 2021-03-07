@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f11da4ab-77a9-4953-9cbb-f3da113e57ac" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\PiscesRepository" />
+        <option name="mavenHome" value="E:/Software/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="E:\Software\maven\apache-maven-3.5.2\conf\settings-lxw.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1n68NlYKRrzbu3dJDFMV2FHiB6o" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33793104" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project_WorkSpace\KindergartenWeChat\PushMessageService\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.personal.kindergarten" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project_WorkSpace\KindergartenWeChat\PushMessageService\src\main\java\com\wechat\demo" />
+      <recent name="D:\Project_WorkSpace\KindergartenWeChat\PushMessageService" />
+      <recent name="D:\Project_WorkSpace\KindergartenWeChat\PushMessageService\src\main\resources" />
+      <recent name="D:\Project_WorkSpace\KindergartenWeChat\PushMessageService\src\main\resources\META-INF\config" />
+      <recent name="D:\Project_WorkSpace\KindergartenWeChat\PushMessageService\doc\db_script" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PushMessageBootStrapApplication">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wechat.util.Demo" />
+      <module name="PushMessageService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.personal.kindergarten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PushMessageBootStrapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="PushMessageService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.personal.kindergarten.PushMessageBootStrapApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f11da4ab-77a9-4953-9cbb-f3da113e57ac" name="Default Changelist" comment="" />
+      <created>1610699142057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610699142057</updated>
+      <workItem from="1610699152721" duration="1162000" />
+      <workItem from="1610700439375" duration="627000" />
+      <workItem from="1610701176168" duration="4920000" />
+      <workItem from="1610800146144" duration="9968000" />
+      <workItem from="1610848670332" duration="11734000" />
+      <workItem from="1610861761848" duration="21963000" />
+      <workItem from="1611058164768" duration="1228000" />
+      <workItem from="1612002510409" duration="2002000" />
+      <workItem from="1613807807251" duration="2059000" />
+      <workItem from="1615000824847" duration="3169000" />
+      <workItem from="1615023886898" duration="11181000" />
+      <workItem from="1615082507919" duration="9524000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="373" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610855855011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="373" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1610855855011" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1615089994142">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615089994142" />
+    <state x="467" y="230" width="431" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610870917116">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="467" y="230" width="431" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1610870917116" />
+    <state width="480" height="466" key="DebuggerActiveHint" timestamp="1615037020928">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="480" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1615037020928" />
+    <state x="440" y="113" key="FileChooserDialogImpl" timestamp="1615092737827">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="440" y="113" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615092737827" />
+    <state width="1306" height="189" key="GridCell.Tab.0.bottom" timestamp="1615096813874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615096813874" />
+    <state width="1306" height="189" key="GridCell.Tab.0.center" timestamp="1615096813873">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615096813873" />
+    <state width="1306" height="189" key="GridCell.Tab.0.left" timestamp="1615096813873">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615096813873" />
+    <state width="1306" height="189" key="GridCell.Tab.0.right" timestamp="1615096813874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615096813874" />
+    <state width="1306" height="189" key="GridCell.Tab.1.bottom" timestamp="1615096813874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615096813874" />
+    <state width="1306" height="189" key="GridCell.Tab.1.center" timestamp="1615096813874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1615096813874" />
+    <state width="1306" height="189" key="GridCell.Tab.1.left" timestamp="1615096813874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1615096813874" />
+    <state width="1306" height="189" key="GridCell.Tab.1.right" timestamp="1615096813874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1615096813874" />
+    <state width="1306" height="219" key="GridCell.Tab.2.bottom" timestamp="1615039306739">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="219" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615039306739" />
+    <state width="1306" height="219" key="GridCell.Tab.2.center" timestamp="1615039306738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="219" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1615039306738" />
+    <state width="1306" height="219" key="GridCell.Tab.2.left" timestamp="1615039306738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="219" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1615039306738" />
+    <state width="1306" height="219" key="GridCell.Tab.2.right" timestamp="1615039306738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="219" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1615039306738" />
+    <state x="213" y="21" key="Maven.ArtifactSearchDialog" timestamp="1610870505248">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="21" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1610870505248" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1610861813625">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610861813625" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1615082554421">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1615082554421" />
+    <state x="237" y="102" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1615038534665">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="237" y="102" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1615038534665" />
+    <state x="370" y="119" width="626" height="490" key="find.popup" timestamp="1615031594675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="370" y="119" width="626" height="490" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1615031594675" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1615025054191">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1615025054191" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1615092742359">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1615092742359" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="groupName" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

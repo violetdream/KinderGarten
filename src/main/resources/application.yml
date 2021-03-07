@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: KindergartenPushMessage
+#https://lite3.sunlands.com/fund-index/?state=
+mybatis:
+  mapper-locations: classpath*:/META-INF/config/mapper/*.xml
+  check-config-location: true
+  config-location: classpath:/META-INF/config/mybatis-config.xml
+nacos:
+  config:
+    server-addr: 120.79.28.199:8848
+    bootstrap:
+      enable: true
+    data-ids: wechat,lixinger,common
+    type: yaml
+    auto-refresh: true
+    remote-first: true
+lixinger:
+  stock-id-type-list:
+    -
+      name: 中证500
+      stock-id: 1000000000905
+    -
+      name: 科创50
+      stock-id: 1000000000688
+    -
+      name: 上证50
+      stock-id: 1000000000016
+    -
+      name: 沪深300
+      stock-id: 1000000000300
+    -
+      name: 创业板指数
+      stock-id: 1000000399006
+    -
+      name: 红利指数
+      stock-id: 1000000000015
+    -
+      name: 军工龙头指数
+      stock-id: 1000000931066
+    -
+      name: 恒生指数
+      stock-id: 1001000000010001

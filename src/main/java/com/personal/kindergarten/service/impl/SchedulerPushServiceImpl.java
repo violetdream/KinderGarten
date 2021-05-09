@@ -32,7 +32,7 @@ public class SchedulerPushServiceImpl {
             Date date= (Date) map.get("date");
             String templature= (String) map.get("temperature");
             return stockIdType.getName()+"在时间为"+date+"的温度为<font color='red' size='15px'>"+templature+"</font>℃";
-        }).collect(Collectors.joining("\n"));
+        }).collect(Collectors.joining("\n<br/>"));
         log.info("发送消息内容："+content);
         Email email =new Email();
         String[] receviers=new String[]{"liuxianweimarx@163.com"};

@@ -8,6 +8,8 @@ import com.personal.kindergarten.service.CrawlingService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -27,6 +29,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Service
+@CacheConfig
 /**
  * 爬取网站数据
  * @author lxw
@@ -53,6 +56,7 @@ public class CrawlingServiceImpl implements CrawlingService {
      * @param stockIdType 查询的指数ID
      * @return
      */
+    @Cacheable(value = "LiXingerInfo",key = "#stockIdType")
     public Map getLiXingerInfo(StockIdType stockIdType){
         Map resultMap=new HashMap();
         Map PBMap=postEntityByParam(stockIdType,"pb");//获取最近一天PB分位点

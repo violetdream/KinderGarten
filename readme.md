@@ -57,7 +57,7 @@ spring:
     url: jdbc:mysql://120.79.28.199:3306/kindergarten?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=UTF-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
+    password: ******
 ```
 
 

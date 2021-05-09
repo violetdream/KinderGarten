@@ -11,6 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -23,6 +24,7 @@ import java.util.Arrays;
 @EnableAsync
 @SpringBootApplication
 @MapperScan(basePackages = "com.personal.kindergarten.dao")
+@EnableCaching
 //用@ConfigurationProperties注解时需要，用@NacosConfigurationProperties注解时不需要，不然找不到会报错
 //@EnableConfigurationProperties({StockIdTypeProperties.class})
 //@NacosPropertySources({

@@ -1,6 +1,32 @@
 spring:
   application:
     name: KindergartenPushMessage
+  datasource:
+    url: jdbc:mysql://120.79.28.199:3306/kindergarten?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  useLocalCache: 3
+  mail:
+    #smtp服务主机  qq邮箱则为smtp.qq.com 163邮箱smtp.163.com
+    host: smtp.qq.com
+    #服务协议
+    protocol: smtp
+    port: 465
+    # 编码集
+    default-encoding: UTF-8
+    #发送邮件的账户
+    username: 854406842@qq.com
+    #授权码
+    password: yanfyzwccdvubbbf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
 #https://lite3.sunlands.com/fund-index/?state=
 mybatis:
   mapper-locations: classpath*:/META-INF/config/mapper/*.xml
@@ -15,7 +41,12 @@ nacos:
     type: yaml
     auto-refresh: true
     remote-first: true
+
 lixinger:
+  get-price-metrics-chart-info:
+    url: https://www.lixinger.com/api/analyt/stock-collection/price-metrics/get-price-metrics-chart-info
+    cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDQ0MzFiYjE5ZTRkYzIyMTQ4NjI2YmUiLCJpYXQiOjE2MTUwODE5MTUsImV4cCI6MTYxNjI5MTUxNX0.hHaszVvAmTI3GmoHw9RaaM1w5KizG76e2N_TIA0HQyo
+    reqestJSONString: '{"stockIds": [%s],"granularity": "y10","metricTypes": ["mcw"], "leftMetricNames": ["%s"], "rightMetricNames": ["cp"]}'
   stock-id-type-list:
     -
       name: 中证500
@@ -41,3 +72,13 @@ lixinger:
     -
       name: 恒生指数
       stock-id: 1001000000010001
+wechat:
+  GetToken_URL: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s
+  AppId: wx1b40edaafb411fcb
+  AppSecret: 88bd7e6ec57d613f2676b2e395c26dac
+  UploadImg_URL: https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=%s
+  AddNews_URL: https://api.weixin.qq.com/cgi-bin/material/add_news?access_token=%s
+  AddMaterial_URL: https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=%s&type=%s
+  SendAll_URL: https://api.weixin.qq.com/cgi-bin/message/mass/sendall?access_token=%s
+  GetAllUser_URL: https://api.weixin.qq.com/cgi-bin/user/get?access_token=%s&next_openid=%s
+  SendTextMessage_URL: https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=%s

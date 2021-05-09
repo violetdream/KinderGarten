@@ -17,6 +17,7 @@ com\wechat\util\AesException.class
 com\wechat\util\ByteGroup.class
 com\wechat\util\PKCS7Encoder.class
 com\personal\kindergarten\service\impl\PushWechatMessageServiceImpl.class
+com\personal\kindergarten\controller\PushMessageController$1.class
 com\wechat\util\WXBizMsgCrypt.class
 com\personal\kindergarten\service\CrawlingService.class
 com\personal\kindergarten\module\StockIdEnumType.class

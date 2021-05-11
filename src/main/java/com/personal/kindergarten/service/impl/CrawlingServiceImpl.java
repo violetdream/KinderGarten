@@ -56,7 +56,8 @@ public class CrawlingServiceImpl implements CrawlingService {
      * @param stockIdType 查询的指数ID
      * @return
      */
-    @Cacheable(value = "LiXingerInfo",key = "#stockIdType")
+    @Override
+    @Cacheable(value = "LiXingerInfo",key = "#stockIdType+#date")
     public Map getLiXingerInfo(StockIdType stockIdType){
         Map resultMap=new HashMap();
         Map PBMap=postEntityByParam(stockIdType,"pb");//获取最近一天PB分位点

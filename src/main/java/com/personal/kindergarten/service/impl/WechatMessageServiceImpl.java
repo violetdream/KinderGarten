@@ -46,9 +46,13 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
 //    @Value("${wechat.AppId}")
     @NacosValue(value = "${wechat.AppId}", autoRefreshed = true)
     private String appId;
+    @NacosValue(value = "${wechat.testAppId}", autoRefreshed = true)
+    private String testAppId;
 //    @Value("${wechat.AppSecret}")
-    @NacosValue(value = "${wechat.AppSecret:}", autoRefreshed = true)
+    @NacosValue(value = "${wechat.AppSecret}", autoRefreshed = true)
     private String appSecret;
+    @NacosValue(value = "${wechat.testAppSecret}", autoRefreshed = true)
+    private String testAppSecret;
 //    @Value("${wechat.UploadImg_URL}")
     @NacosValue(value = "${wechat.UploadImg_URL}", autoRefreshed = true)
     private String uploadImgURL;
@@ -76,9 +80,10 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
      * GetToken
      * 每6000ms执行一次，不会因上一次任务未执行完而阻塞
      */
-    @Scheduled(cron="0 0 0/1 * * ?")
-    @Async
-    public String GetToken(){
+    @Override
+//    @Scheduled(cron="0 0 0/1 * * ?")
+//    @Async
+    public String GetToken(String appId,String appSecret){
         long startTime=System.currentTimeMillis();
         log.info("start get_token schedulering... , start time is "+new Timestamp(startTime));
         String url=String.format(getTokenURL,appId,appSecret);
@@ -96,6 +101,12 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
                 List<KdWechat> kdWechatList=kdWechatMapper.selectByExample(kdWechatExample);
                 if(kdWechatList.isEmpty()){
                     log.error("数据库初始脚本未执行");
+                    KdWechat kdWechat=new KdWechat();
+                    kdWechat.setAppId(appId);
+                    kdWechat.setAppSecret(appSecret);
+                    kdWechat.setAccessToken(token);
+                    kdWechat.setUpdateTime(new Timestamp(System.currentTimeMillis()));
+                    kdWechatMapper.insertSelective(kdWechat);
                     return token;
                 }
                 KdWechat kdWechat= kdWechatMapper.selectByPrimaryKey(kdWechatList.get(0).getId());
@@ -121,10 +132,11 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
      * 上传图文消息内的图片获取URL
      * 本接口所上传的图片不占用公众号的素材库中图片数量的100000个的限制。图片仅支持jpg/png格式，大小必须在1MB以下
      */
+    @Override
     public String UploadImg(){
         String imageName="004.jpg";
         //获取token，组装群发接口
-        String token=GetToken();
+        String token=GetToken(appId,appSecret);
         String url=String.format(uploadImgURL,token);
 
 
@@ -169,9 +181,10 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
      * @return media_id
      */
 
+    @Override
     public String AddNews(){
         //获取token，组装群发接口
-        String token=GetToken();
+        String token=GetToken(appId,appSecret);
         String url=String.format(addNesURL,token);
         Map  returnMap=new HashMap();
 
@@ -219,6 +232,7 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
      * curl "https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=ACCESS_TOKEN&type=TYPE" -F media=@media.file -F description='{"title":VIDEO_TITLE, "introduction":INTRODUCTION}'
      */
 
+    @Override
     public Map add_material(){
         String title="2014文艺表演";//视频素材的标题
         String introduction="2014胡老师文艺表演";//视频素材的描述
@@ -226,7 +240,7 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
         Map  returnMap=new HashMap();
 
         //获取token，组装群发接口
-        String token=GetToken();
+        String token=GetToken(appId,appSecret);
         String url=String.format(addMaterialURL,token,type);
 
         //E:\新年聚会视频与照片\2014文艺表演\VID_20140201_220145.mp4
@@ -277,11 +291,12 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
      * @return
      *
      */
+    @Override
     public Map SendAll() {
         Map returnMap = new HashMap();
 
         //获取token，组装群发接口
-        String token = GetToken();
+        String token = GetToken(testAppId,testAppSecret);
         String url = String.format(sendAllURL, token);
 
         Map sendMap = new HashMap();
@@ -316,13 +331,13 @@ public class WechatMessageServiceImpl implements WechatMessageService, CommandLi
 
 
     public boolean pushTestMessage() {
-        String token=GetToken();
+        String token=GetToken(testAppId,testAppSecret);
         String url=String.format(sendTextMessageURL,token);
         Map sendMap=new HashMap();
-        sendMap.put("touser", appId);
+        sendMap.put("touser", "oZ8lC6nP1CLf0GgfGtiCxLGqeDZE");//我自己
         sendMap.put("msgtype", "text");
         Map textMap=new HashMap();
-        textMap.put("content","Hello World");
+        textMap.put("content","正在加班中。。。，请稍候再试，或联系854406842@qq.com");
         sendMap.put("text",textMap);
         Object sendJsonString = JSON.toJSON(sendMap);
         log.info("SendAll toJSON String : " + sendJsonString);

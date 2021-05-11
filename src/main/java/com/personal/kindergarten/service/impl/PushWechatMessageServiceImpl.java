@@ -33,6 +33,10 @@ public class PushWechatMessageServiceImpl implements PushWechatMessageService {
 //    @Value("${wechat.GetAllUser_URL}")
     @NacosValue(value = "${wechat.GetAllUser_URL}", autoRefreshed = true)
     private String GetAllUser_URL;//获取所有关注用户列表
+    @NacosValue(value = "${wechat.testAppId}", autoRefreshed = true)
+    private String testAppId;
+    @NacosValue(value = "${wechat.testAppSecret}", autoRefreshed = true)
+    private String testAppSecret;
 
     @Autowired
     private RestTemplate restTemplate;
@@ -53,7 +57,7 @@ public class PushWechatMessageServiceImpl implements PushWechatMessageService {
         String access_token=kdWechatList.get(0).getAccessToken();
         if(StringUtils.isEmpty(access_token)){
             log.warn("access_token is null "+kdWechatList);
-            access_token=wechatMessageService.GetToken();
+            access_token=wechatMessageService.GetToken(testAppId,testAppSecret);
         }
         JSONObject responseJSON=restTemplate.getForObject(String.format(GetAllUser_URL,access_token,""), JSONObject.class);
         log.info("所有关注用户列表: "+responseJSON);

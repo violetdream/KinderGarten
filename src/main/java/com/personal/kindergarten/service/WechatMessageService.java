@@ -10,7 +10,7 @@ public interface WechatMessageService {
      * GetToken
      * 每6000ms执行一次，不会因上一次任务未执行完而阻塞
      */
-    public String GetToken();
+    public String GetToken(String appId,String appSecret);
 
     /**
      * 上传图片素材至微信服务器

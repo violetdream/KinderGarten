@@ -75,7 +75,9 @@ lixinger:
 wechat:
   GetToken_URL: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s
   AppId: wx1b40edaafb411fcb
+  testAppId: wx72092703cac7b402
   AppSecret: 88bd7e6ec57d613f2676b2e395c26dac
+  testAppSecret: aa2a29893dbd9e5cba36da1853ba0c3b
   UploadImg_URL: https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=%s
   AddNews_URL: https://api.weixin.qq.com/cgi-bin/material/add_news?access_token=%s
   AddMaterial_URL: https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=%s&type=%s

@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f11da4ab-77a9-4953-9cbb-f3da113e57ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/config/KeyGeneratorConfig.java" afterDir="false" />
+    <list default="true" id="f11da4ab-77a9-4953-9cbb-f3da113e57ac" name="Default Changelist" comment="fixed:修复cached缓存不失效问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/CrawlingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/CrawlingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lxw-KindergartenPushMessage-server.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/target/lxw-KindergartenPushMessage-server.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +161,7 @@
       <workItem from="1615803016504" duration="531000" />
       <workItem from="1616137939262" duration="837000" />
       <workItem from="1620529941484" duration="16266000" />
-      <workItem from="1620731240445" duration="5374000" />
+      <workItem from="1620731240445" duration="6023000" />
     </task>
     <task id="LOCAL-00001" summary="新增发送EMAIL邮件模块&#10;新增cache本地缓存模块">
       <created>1620548201136</created>
@@ -196,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620734947758</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed:修复cached缓存不失效问题">
+      <created>1620736734980</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620736734980</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,17 +209,18 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="新增发送EMAIL邮件模块&#10;新增cache本地缓存模块" />
     <MESSAGE value="新增测试账号appid及appsecret" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增测试账号appid及appsecret" />
+    <MESSAGE value="fixed:修复cached缓存不失效问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed:修复cached缓存不失效问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1620735366300">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1620735366300" />
-    <state x="199" y="0" key="CommitChangelistDialog2" timestamp="1620734936117">
+    <state x="199" y="0" key="CommitChangelistDialog2" timestamp="1620737210145">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="199" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1620734936117" />
+    <state x="199" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1620737210145" />
     <state width="480" height="466" key="DebuggerActiveHint" timestamp="1615037020928">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -278,10 +281,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="351" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620532658153" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1620734979684">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1620737234942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1620734979684" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1620737234942" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1615803020258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -294,10 +297,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="370" y="119" width="626" height="490" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1620542190503" />
-    <state x="383" y="165" key="git4idea.merge.GitPullDialog" timestamp="1620548828854">
+    <state x="383" y="165" key="git4idea.merge.GitPullDialog" timestamp="1620737198011">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="383" y="165" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1620548828854" />
+    <state x="383" y="165" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1620737198011" />
     <state x="339" y="164" key="run.anything.popup" timestamp="1615025054191">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

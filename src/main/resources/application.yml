@@ -1,12 +1,6 @@
 spring:
   application:
     name: KindergartenPushMessage
-  datasource:
-    url: jdbc:mysql://120.79.28.199:3306/kindergarten?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=UTF-8
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 123456
-  useLocalCache: 3
   mail:
     #smtp服务主机  qq邮箱则为smtp.qq.com 163邮箱smtp.163.com
     host: smtp.qq.com
@@ -17,8 +11,6 @@ spring:
     default-encoding: UTF-8
     #发送邮件的账户
     username: 854406842@qq.com
-    #授权码
-    password: yanfyzwccdvubbbf
     properties:
       mail:
         smtp:
@@ -74,10 +66,6 @@ lixinger:
       stock-id: 1001000000010001
 wechat:
   GetToken_URL: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s
-  AppId: wx1b40edaafb411fcb
-  testAppId: wx72092703cac7b402
-  AppSecret: 88bd7e6ec57d613f2676b2e395c26dac
-  testAppSecret: aa2a29893dbd9e5cba36da1853ba0c3b
   UploadImg_URL: https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=%s
   AddNews_URL: https://api.weixin.qq.com/cgi-bin/material/add_news?access_token=%s
   AddMaterial_URL: https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=%s&type=%s

@@ -8,9 +8,11 @@ com\personal\kindergarten\config\WebSecurityConfig.class
 com\personal\kindergarten\module\StockIdType.class
 com\personal\kindergarten\dao\KdWechatExample$Criterion.class
 com\personal\kindergarten\dao\KdWechatExample$GeneratedCriteria.class
+com\personal\kindergarten\config\KeyGeneratorConfig$1.class
 com\personal\kindergarten\PushMessageBootStrapApplication.class
 com\wechat\util\Program.class
 com\wechat\util\Demo.class
+com\personal\kindergarten\config\KeyGeneratorConfig.class
 com\personal\kindergarten\config\AuthorizationServerConfig.class
 com\personal\kindergarten\dao\KdWechat.class
 com\wechat\util\AesException.class

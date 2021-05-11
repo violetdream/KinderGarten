@@ -57,7 +57,7 @@ public class CrawlingServiceImpl implements CrawlingService {
      * @return
      */
     @Override
-    @Cacheable(value = "LiXingerInfo",key = "#stockIdType+#date")
+    @Cacheable(value = "LiXingerInfo",keyGenerator = "keyGenerator")
     public Map getLiXingerInfo(StockIdType stockIdType){
         Map resultMap=new HashMap();
         Map PBMap=postEntityByParam(stockIdType,"pb");//获取最近一天PB分位点

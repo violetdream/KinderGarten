@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f11da4ab-77a9-4953-9cbb-f3da113e57ac" name="Default Changelist" comment="新增发送EMAIL邮件模块&#10;新增cache本地缓存模块">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_3_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_3_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f11da4ab-77a9-4953-9cbb-f3da113e57ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/config/KeyGeneratorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/WechatMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/WechatMessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/CrawlingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/CrawlingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/PushWechatMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/PushWechatMessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/WechatMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personal/kindergarten/service/impl/WechatMessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/WechatMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/WechatMessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/impl/CrawlingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/impl/CrawlingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/impl/PushWechatMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/impl/PushWechatMessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/impl/WechatMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/personal/kindergarten/service/impl/WechatMessageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/PushMessageService-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lxw-KindergartenPushMessage-server.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/target/lxw-KindergartenPushMessage-server.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +166,7 @@
       <workItem from="1615803016504" duration="531000" />
       <workItem from="1616137939262" duration="837000" />
       <workItem from="1620529941484" duration="16266000" />
-      <workItem from="1620731240445" duration="3579000" />
+      <workItem from="1620731240445" duration="5374000" />
     </task>
     <task id="LOCAL-00001" summary="新增发送EMAIL邮件模块&#10;新增cache本地缓存模块">
       <created>1620548201136</created>
@@ -200,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620549846536</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增测试账号appid及appsecret">
+      <created>1620734947758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620734947758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,13 +206,14 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="新增发送EMAIL邮件模块&#10;新增cache本地缓存模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增发送EMAIL邮件模块&#10;新增cache本地缓存模块" />
+    <MESSAGE value="新增测试账号appid及appsecret" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增测试账号appid及appsecret" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1615089994142">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1620735366300">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615089994142" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1620735366300" />
     <state x="199" y="0" key="CommitChangelistDialog2" timestamp="1620734936117">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -229,22 +226,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="113" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615803576377" />
-    <state width="1306" height="121" key="GridCell.Tab.0.bottom" timestamp="1620734869861">
+    <state width="1306" height="121" key="GridCell.Tab.0.bottom" timestamp="1620736436355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="121" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620734869861" />
-    <state width="1306" height="121" key="GridCell.Tab.0.center" timestamp="1620734869861">
+    <state width="1306" height="121" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620736436355" />
+    <state width="1306" height="121" key="GridCell.Tab.0.center" timestamp="1620736436355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="121" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620734869861" />
-    <state width="1306" height="121" key="GridCell.Tab.0.left" timestamp="1620734869860">
+    <state width="1306" height="121" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620736436355" />
+    <state width="1306" height="121" key="GridCell.Tab.0.left" timestamp="1620736436355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="121" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620734869860" />
-    <state width="1306" height="121" key="GridCell.Tab.0.right" timestamp="1620734869861">
+    <state width="1306" height="121" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620736436355" />
+    <state width="1306" height="121" key="GridCell.Tab.0.right" timestamp="1620736436355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="121" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620734869861" />
+    <state width="1306" height="121" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620736436355" />
     <state width="1306" height="121" key="GridCell.Tab.1.bottom" timestamp="1620734869861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -281,10 +278,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="351" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620532658153" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1620549940405">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1620734979684">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1620549940405" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1620734979684" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1615803020258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

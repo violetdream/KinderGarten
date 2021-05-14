@@ -84,9 +84,11 @@ public class PushMessageController {
             case "event":
                 //关注/取消关注事件
                 xmlContent=processEventMessage(root);
+                sendEmail("关注/取消事件",xmlString);
                 break;
             default:
                 xmlContent=processDefaultMessage(root);
+                sendEmail("默认回复消息",xmlString);
                 break;
         }
         log.info("返回的XML消息内容：："+xmlContent);
@@ -150,7 +152,6 @@ public class PushMessageController {
         } else {
             content = "很抱歉，功能正在努力完善中，可发邮件至<a href=\"https://mail.qq.com/\">854406842@qq.com</a>给我留言想要的功能哦！";
         }
-        sendEmail("关注/取消事件",root.getTextContent());
         return XMLParse.generateTextMessage(FromUserName, ToUserName, "text", content, "");
     }
 
@@ -162,7 +163,6 @@ public class PushMessageController {
         if(root.getElementsByTagName("MsgId")!=null){
             MsgId = root.getElementsByTagName("MsgId").item(0).getTextContent();
         }
-        sendEmail("默认回复消息",root.getTextContent());
         String content ="Hello,欢迎你关注我，功能正在努力完善中，如果喜欢可发邮件至<a href=\"https://mail.qq.com/\">854406842@qq.com</a>给我留言哦！";
         return XMLParse.generateTextMessage(FromUserName, ToUserName, "text", content, MsgId);
     }

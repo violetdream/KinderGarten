@@ -2,6 +2,7 @@ package com.personal.kindergarten.service.impl;
 
 import com.personal.kindergarten.bean.Email;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.mail.MailProperties;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -36,8 +37,16 @@ public class SendMailServiceImpl {
             //发送人
             mimeMessageHelper.setFrom(mailProperties.getUsername());
 
+            String[] receivers;
+            if(email.getReceivers()==null){
+                String receiverStr=mailProperties.getProperties().get("receivers");
+                receivers=receiverStr.split(",");
+            }else {
+                receivers= email.getReceivers();
+            }
+
             //收邮件人
-            mimeMessageHelper.setTo(email.getReceivers());
+            mimeMessageHelper.setTo(receivers);
 
             //邮件主题
             mimeMessageHelper.setSubject(email.getSubject());

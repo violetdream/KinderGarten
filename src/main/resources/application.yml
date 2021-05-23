@@ -19,6 +19,7 @@ spring:
             enable: true
           socketFactory:
             class: javax.net.ssl.SSLSocketFactory
+      receivers: liuxianweimarx@163.com,1311855250@qq.com
 #https://lite3.sunlands.com/fund-index/?state=
 mybatis:
   mapper-locations: classpath*:/META-INF/config/mapper/*.xml

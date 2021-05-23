@@ -26,7 +26,7 @@ public class SchedulerPushServiceImpl {
 
     private String[] receviers=new String[]{"liuxianweimarx@163.com","1311855250@qq.com"};
 
-    @Scheduled(cron="0/15 * * * * ?")
+    @Scheduled(cron="0 0 18 * * ?")
     public void pushMessage(){
         String content="";
         try{
